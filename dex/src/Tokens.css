@@ -7,6 +7,42 @@
     border-radius: 14px;
     border: 1px solid #5981F36f;
     box-shadow: 0px 0px 75px #5981F33f;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+/* Firefox */
+.list-group {
+  scrollbar-width: thin;                      /* auto | thin | none */
+  scrollbar-color: #3a4157 #0E111B;           /* thumb | track */
+}
+
+/* WebKit (Chrome, Edge, Safari, Opera) */
+.list-group::-webkit-scrollbar {
+  width: 10px;
+}
+
+.list-group::-webkit-scrollbar-track {
+  background: #0E111B;
+  border-left: 1px solid #363e54;
+}
+
+.list-group::-webkit-scrollbar-thumb {
+  background-color: #3a4157;
+  border-radius: 8px;
+  border: 2px solid #0E111B;                  /* crea separación visual */
+}
+
+.list-group:hover::-webkit-scrollbar-thumb {
+  background-color: #4a5675;                  /* leve highlight al hover */
+}
+
+.list-group::-webkit-scrollbar-thumb:active {
+  background-color: #5981F3;                  /* acento al arrastrar */
+}
+
+.list-group::-webkit-scrollbar-corner {
+  background: #0E111B;
 }
   
 .list-group li {

@@ -163,7 +163,8 @@ function Swap() {
           })}
         </div>
       </Modal>
-
+      <div>
+      <h1>Welcome to CyberGlowSwap!</h1>
       <div className="tradeBox">
         <div className="tradeBoxHeader">
           <h4>Swap</h4>
@@ -215,6 +216,7 @@ function Swap() {
         <div className="swapButton" disabled={!tokenOneAmount}>
           Swap
         </div>
+      </div>
       </div>
     </>
   );

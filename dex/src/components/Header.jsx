@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "../vite.svg";
-import Eth from "../eth.svg";
+import Logo from "/favicon.png";
+import Iota from "../iota.svg";
 import { Link } from "react-router-dom";
 
 function Header(props) {
@@ -21,10 +21,12 @@ function Header(props) {
       </div>
       <div className="rightH">
         <div className="headerItem">
-          <img src={Eth} alt="eth" className="eth" />
-          Ethereum
+          <img src={Iota} alt="iota" className="eth" />
+          mainnet
         </div>
-        <div className="connectButton" onClick={connect}>
+        <div className="connectButton" 
+        onClick={undefined}
+        style={{ pointerEvents: 'none', opacity: 0.5, cursor: 'not-allowed' }}>
           {isConnected
             ? address.slice(0, 5) + "..." + address.slice(38)
             : "Connect"}

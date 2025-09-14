@@ -29,8 +29,8 @@ header {
 }
 
 .eth{
-  width: 20px;
-  height: 20px;
+  width: 125px;
+  height: auto;
   padding-right: 10px;
 
 }
@@ -267,7 +267,43 @@ header {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px
+  gap: 10px;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+/* Firefox */
+.modalContent {
+  scrollbar-width: thin;                      /* auto | thin | none */
+  scrollbar-color: #3a4157 #0E111B;           /* thumb | track */
+}
+
+/* WebKit (Chrome, Edge, Safari, Opera) */
+.modalContent::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modalContent::-webkit-scrollbar-track {
+  background: #0E111B;
+  border-left: 1px solid #363e54;
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+  background-color: #3a4157;
+  border-radius: 8px;
+  border: 2px solid #0E111B;                  /* crea separación visual */
+}
+
+.modalContent:hover::-webkit-scrollbar-thumb {
+  background-color: #4a5675;                  /* leve highlight al hover */
+}
+
+.modalContent::-webkit-scrollbar-thumb:active {
+  background-color: #5981F3;                  /* acento al arrastrar */
+}
+
+.modalContent::-webkit-scrollbar-corner {
+  background: #0E111B;
 }
 
 .tokenChoice {
